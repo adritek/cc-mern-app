@@ -1,0 +1,20 @@
+version: "3"
+services:
+  frontend:
+    build: frontend
+    image: bdf61c11561a
+    stdin_open: true
+    ports: 
+      - "3000:8080"
+    networks:
+      - mern-app
+  backend:
+    build: backend
+    image: 6a5958a64c8d
+    ports:
+      - "5000:8080"
+    networks:
+      - mern-app
+networks:
+  mern-app:
+    driver: bridge

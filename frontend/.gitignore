@@ -1,28 +1,23 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-frontend/node_modules/
-server/node_modules/
-.idea/
-data
-*.log
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.idea
+# testing
+/coverage
 
-# compiled output
-/dist
-/tmp
-/out-tsc
+# production
+/build
 
 # misc
 .DS_Store
-Thumbs.db
-.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-# Logs
-logs
-*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
